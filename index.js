@@ -5,7 +5,7 @@ const cors = require("cors");
 
 app.use(cors());
 
-app.listen('https://portfoliopowerdbyginil.vercel.app/', () => {
+app.listen('https://find-it-dj5lrl1kg-jibin-joys-projects-4e286f1b.vercel.app/', () => {
   console.log("server listening on port 8080");
 });
 
