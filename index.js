@@ -5,9 +5,9 @@ const cors = require("cors");
 
 app.use(cors());
 
-// app.listen('https://find-it-dj5lrl1kg-jibin-joys-projects-4e286f1b.vercel.app/', () => {
-app.listen(8080, () => {
-  console.log("server listening on port 8080");
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+  console.log(`server listening on port ${PORT}`);
 });
 
 app.get("/", (req, res) => {
