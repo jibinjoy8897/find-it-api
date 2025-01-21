@@ -1,10 +1,14 @@
-const express = require("express");
+import express from "express";
 const app = express();
-const cors = require("cors");
+import cors from "cors";
+import connectMongoDB from"./db/connectMongoDb.js";
 
 app.use(cors());
 
 const PORT = process.env.PORT || 5000;
+
+connectMongoDB();
+
 app.listen(PORT, () => {
   console.log(`server listening on port ${PORT}`);
 });
